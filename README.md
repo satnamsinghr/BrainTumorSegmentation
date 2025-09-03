@@ -48,15 +48,15 @@ This work uses a public Brain MRI tumor dataset (commonly available via Kaggle /
 
 **Quick dataset download options (used in notebook):**
 python
-# Option A: Kaggle (recommended)
+## Option A: Kaggle (recommended)
 !pip install -q kaggle
-# Upload kaggle.json to Colab, then:
+## Upload kaggle.json to Colab, then:
 !kaggle datasets download -d <dataset-id> -p /content/data --unzip
 
-# Option B: Google Drive (if you shared data to your Drive)
+## Option B: Google Drive (if you shared data to your Drive)
 from google.colab import drive
 drive.mount('/content/drive')
-# copy or unzip files from Drive to /content/data
+## copy or unzip files from Drive to /content/data
 
 ## How to run (recommended: Google Colab)
 
@@ -76,7 +76,7 @@ git clone https://github.com/satnamsinghr/BrainTumorSegmentation.git
 cd BrainTumorSegmentation
 
 
-Create virtual env and install:
+##Create virtual env and install:
 
 python -m venv venv
 source venv/bin/activate      # Linux/Mac
