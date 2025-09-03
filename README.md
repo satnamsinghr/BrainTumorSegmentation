@@ -54,28 +54,28 @@ python
 !kaggle datasets download -d <dataset-id> -p /content/data --unzip
 
 ## Option B: Google Drive (if you shared data to your Drive)
-from google.colab import drive
-drive.mount('/content/drive')
+- from google.colab import drive
+- drive.mount('/content/drive')
  
 ## Create virtual env and install:
 
-1. python -m venv venv
-source venv/bin/activate      # Linux/Mac
-venv\Scripts\activate         # Windows
-pip install -r requirements.txt
+- python -m venv venv
+- source venv/bin/activate      # Linux/Mac
+- venv\Scripts\activate         # Windows
+- pip install -r requirements.txt
 
 ## Launch the notebook locally:
 
-jupyter notebook notebooks/BrainTumorSegmentation.ipynb
-Evaluation & expected outputs
-Metrics: Dice coefficient (per class), IoU, Precision, Recall, overall accuracy.
-Visual outputs: predicted segmentation masks overlayed on MRIs, sample failure cases, loss/accuracy curves.
-Save your best model weights and example outputs to Google Drive for sharing.
-Recommended experiments / ablation ideas
-Compare full ResNet-50 vs Modified Half ResNet-50 performance / speed.
-Try different loss mixes: Dice-only vs Dice + CE.
-Test additional augmentations (elastic, grid distortion).
-Quantize / prune model for edge deployment.
+- jupyter notebook notebooks/BrainTumorSegmentation.ipynb
+- Evaluation & expected outputs
+- Metrics: Dice coefficient (per class), IoU, Precision, Recall, overall accuracy.
+- Visual outputs: predicted segmentation masks overlayed on MRIs, sample failure cases, loss/accuracy curves.
+- Save your best model weights and example outputs to Google Drive for sharing.
+- Recommended experiments / ablation ideas
+- Compare full ResNet-50 vs Modified Half ResNet-50 performance / speed.
+- Try different loss mixes: Dice-only vs Dice + CE.
+- Test additional augmentations (elastic, grid distortion).
+- Quantize / prune model for edge deployment.
 
 ## File / folder structure (recommended)
 BrainTumorSegmentation/
