@@ -59,7 +59,7 @@ drive.mount('/content/drive')
  
 ## Create virtual env and install:
 
-python -m venv venv
+1. python -m venv venv
 source venv/bin/activate      # Linux/Mac
 venv\Scripts\activate         # Windows
 pip install -r requirements.txt
@@ -91,24 +91,24 @@ BrainTumorSegmentation/
 
 ## Reproducibility checklist
 
- Set Colab runtime to GPU.
- Provide kaggle.json in Colab when using Kaggle API (do not push kaggle.json to repo).
- Set random seeds (already in notebook) for reproducible training.
- Save best model checkpoints to Drive.
+1. Set Colab runtime to GPU.
+2. Provide kaggle.json in Colab when using Kaggle API (do not push kaggle.json to repo).
+3. Set random seeds (already in notebook) for reproducible training.
+4. Save best model checkpoints to Drive.
 
 ## Future work
 
-Add a minimal Flask/FastAPI wrapper for inference and demo (small web app).
-Containerize (Dockerfile) for reproducible environment.
-Create a small test suite / evaluation script.
+1. Add a minimal Flask/FastAPI wrapper for inference and demo (small web app).
+2. Containerize (Dockerfile) for reproducible environment.
+3. Create a small test suite / evaluation script.
 
 ## Acknowledgements & references
 
-Project report attached in papers/brain_tumor_paper.pdf.
-Datasets and code patterns inspired by public MRI tumor segmentation works and U-Net / ResNet literature.
+1. Project report attached in papers/brain_tumor_paper.pdf.
+2. Datasets and code patterns inspired by public MRI tumor segmentation works and U-Net / ResNet literature.
 
 ## Author & contact
 
-Satnam Singh Ramavath
-Email: satnamsinghramavath9320@gmail.com
-GitHub: https://github.com/satnamsinghr
+1. Satnam Singh Ramavath
+2. Email: satnamsinghramavath9320@gmail.com
+3. GitHub: https://github.com/satnamsinghr
