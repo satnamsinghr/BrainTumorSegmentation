@@ -47,7 +47,7 @@ This work uses a public Brain MRI tumor dataset (commonly available via Kaggle /
 **Important:** Do **not** upload raw/full datasets or large model weights to GitHub. The notebook includes Kaggle / Drive download snippets so you can pull the dataset at runtime.
 
 **Quick dataset download options (used in notebook):**
-```python
+python
 # Option A: Kaggle (recommended)
 !pip install -q kaggle
 # Upload kaggle.json to Colab, then:
