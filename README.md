@@ -45,7 +45,7 @@ Medical image segmentation is crucial for assisting radiologists and improving d
 ## Dataset
 This work uses a public Brain MRI tumor dataset (commonly available via Kaggle / academic sources).  
 **Important:** Do **not** upload raw/full datasets or large model weights to GitHub. The notebook includes Kaggle / Drive download snippets so you can pull the dataset at runtime.
----
+
 **Quick dataset download options (used in notebook):**
 python
 ## Option A: Kaggle (recommended)
@@ -88,25 +88,25 @@ BrainTumorSegmentation/
 │   └── predicted_mask_01.png
 ├── requirements.txt
 └── README.md
----
+
 ## Reproducibility checklist
 
  Set Colab runtime to GPU.
  Provide kaggle.json in Colab when using Kaggle API (do not push kaggle.json to repo).
  Set random seeds (already in notebook) for reproducible training.
  Save best model checkpoints to Drive.
----
+
 ## Future work
 
 Add a minimal Flask/FastAPI wrapper for inference and demo (small web app).
 Containerize (Dockerfile) for reproducible environment.
 Create a small test suite / evaluation script.
----
+
 ## Acknowledgements & references
 
 Project report attached in papers/brain_tumor_paper.pdf.
 Datasets and code patterns inspired by public MRI tumor segmentation works and U-Net / ResNet literature.
----
+
 ## Author & contact
 
 Satnam Singh Ramavath
