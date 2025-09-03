@@ -58,7 +58,7 @@ from google.colab import drive
 drive.mount('/content/drive')
 # copy or unzip files from Drive to /content/data
 
-How to run (recommended: Google Colab)
+## How to run (recommended: Google Colab)
 
 Click the Open in Colab badge (or open notebooks/BrainTumorSegmentation.ipynb in Colab).
 
@@ -84,7 +84,7 @@ venv\Scripts\activate         # Windows
 pip install -r requirements.txt
 
 
-Launch the notebook locally:
+## Launch the notebook locally:
 
 jupyter notebook notebooks/BrainTumorSegmentation.ipynb
 
@@ -108,7 +108,7 @@ Quantize / prune model for edge deployment.
 
  
 
-File / folder structure (recommended)
+## File / folder structure (recommended)
 BrainTumorSegmentation/
 ├── notebooks/
 │   └── BrainTumorSegmentation.ipynb
@@ -120,7 +120,7 @@ BrainTumorSegmentation/
 ├── requirements.txt
 └── README.md
 
-Reproducibility checklist
+## Reproducibility checklist
 
  Set Colab runtime to GPU.
 
@@ -130,7 +130,7 @@ Reproducibility checklist
 
  Save best model checkpoints to Drive.
 
-Future work
+## Future work
 
 Add a minimal Flask/FastAPI wrapper for inference and demo (small web app).
 
@@ -138,13 +138,13 @@ Containerize (Dockerfile) for reproducible environment.
 
 Create a small test suite / evaluation script.
 
-Acknowledgements & references
+## Acknowledgements & references
 
 Project report attached in papers/brain_tumor_paper.pdf.
 
 Datasets and code patterns inspired by public MRI tumor segmentation works and U-Net / ResNet literature.
 
-Author & contact
+## Author & contact
 
 Satnam Singh Ramavath
 
