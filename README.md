@@ -45,25 +45,29 @@ A compact, efficient segmentation pipeline using a **Modified Half ResNet-50 enc
 
 ## Dataset
 This work uses a public Brain MRI tumor dataset (commonly available via Kaggle / academic sources).  \
-- The notebook includes Kaggle / Drive download snippets so you can pull the dataset at runtime.
+The notebook includes Kaggle / Drive download snippets so you can pull the dataset at runtime.
 
 **Quick dataset download options (used in notebook):**
 python
-## Option A: Kaggle (recommended)
+### Option A: Kaggle (recommended)
 !pip install -q kaggle\
-## Upload kaggle.json to Colab, then:
+### Upload kaggle.json to Colab, then:
 !kaggle datasets download -d <dataset-id> -p /content/data --unzip
 
-## Option B: Google Drive (if you shared data to your Drive)
+### Option B: Google Drive (if you shared data to your Drive)
 1. from google.colab import drive
 2. drive.mount('/content/drive')
- 
+
+---
+
 ## Create virtual env and install:
 
 1. python -m venv venv
 2. source venv/bin/activate      \
 3. venv\Scripts\activate         
 4. pip install -r requirements.txt
+
+---
 
 ## Launch the notebook locally:
 
@@ -78,6 +82,8 @@ python
 9. Test additional augmentations (elastic, grid distortion).
 10. Quantize / prune model for edge deployment.
 
+---
+
 ## File / folder structure (recommended)
 BrainTumorSegmentation/
 ├── notebooks/
@@ -90,6 +96,8 @@ BrainTumorSegmentation/
 ├── requirements.txt
 └── README.md
 
+---
+
 ## Reproducibility checklist
 
 1. Set Colab runtime to GPU.
@@ -97,16 +105,22 @@ BrainTumorSegmentation/
 3. Set random seeds (already in notebook) for reproducible training.
 4. Save best model checkpoints to Drive.
 
+---
+
 ## Future work
 
 1. Add a minimal Flask/FastAPI wrapper for inference and demo (small web app).
 2. Containerize (Dockerfile) for reproducible environment.
 3. Create a small test suite / evaluation script.
 
+---
+
 ## Acknowledgements & references
 
 1. Project report attached in papers/brain_tumor_paper.pdf.
 2. Datasets and code patterns inspired by public MRI tumor segmentation works and U-Net / ResNet literature.
+
+---
 
 ## Author & contact
 
